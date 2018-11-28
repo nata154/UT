@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Тоха\AppData\Local\Temp\testng-eclipse-1251652672\testng-customsuite.xml</span>
+                    <span>C:\Users\Тоха\AppData\Local\Temp\testng-eclipse--928489547\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 3 failed,   2 passed</span>
+                    <span class="method-stats">6 methods, 4 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,17 +102,22 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="triangle_test.Test_CheckTriangle" class="method navigator-link" hash-for-method="testC0">testC0</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="triangle_test.Test_getSquareOfTriangle" class="method navigator-link" hash-for-method="test_SquareOverflow">test_SquareOverflow</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="triangle_test.Test_CheckTriangle" class="method navigator-link" hash-for-method="test_NegativeSideC">test_NegativeSideC</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="triangle_test.Test_getSquareOfTriangle" class="method navigator-link" hash-for-method="test_getSquareCantExist">test_getSquareCantExist</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="triangle_test.Test_CheckTriangle" class="method navigator-link" hash-for-method="test_NegativeSides">test_NegativeSides</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="triangle_test.Test_getSquareOfTriangle" class="method navigator-link" hash-for-method="test_getSquareNegManual">test_getSquareNegManual</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="triangle_test.Test_getSquareOfTriangle" class="method navigator-link" hash-for-method="test_getSquareNegativeSide">test_getSquareNegativeSide</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -126,12 +131,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="triangle_test.Test_CheckTriangle" class="method navigator-link" hash-for-method="test_NegativeSideA">test_NegativeSideA</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="triangle_test.Test_getSquareOfTriangle" class="method navigator-link" hash-for-method="test_getSquare">test_getSquare</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="triangle_test.Test_CheckTriangle" class="method navigator-link" hash-for-method="test_NegativeSideB">test_NegativeSideB</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="triangle_test.Test_getSquareOfTriangle" class="method navigator-link" hash-for-method="test_getSquareRectangTrianAnotherEquation">test_getSquareRectangTrianAnotherEquation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -149,17 +154,53 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">triangle_test.Test_CheckTriangle</span>
+              <span class="class-name">triangle_test.Test_getSquareOfTriangle</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testC0">
-                  </a> <!-- testC0 -->
-                  <span class="method-name">testC0</span>
-                  <div class="stack-trace">java.lang.AssertionError: There is a mistake in line 44 comparing c&lt;0
+                  <a name="test_SquareOverflow">
+                  </a> <!-- test_SquareOverflow -->
+                  <span class="method-name">test_SquareOverflow</span>
+                  <div class="stack-trace">org.testng.TestException: 
+Method Test_getSquareOfTriangle.test_SquareOverflow()[pri:0, instance:triangle_test.Test_getSquareOfTriangle@1e66f1f5] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:89)
+	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1416)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:695)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_getSquareCantExist">
+                  </a> <!-- test_getSquareCantExist -->
+                  <span class="method-name">test_getSquareCantExist</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [NaN] but found [4.0]
 	at org.testng.Assert.fail(Assert.java:93)
-	at triangle_test.Test_CheckTriangle.testC0(Test_CheckTriangle.java:14)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEquals(Assert.java:221)
+	at org.testng.Assert.assertEquals(Assert.java:238)
+	at triangle_test.Test_getSquareOfTriangle.test_getSquareCantExist(Test_getSquareOfTriangle.java:34)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -191,17 +232,12 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test_NegativeSideC">
-                  </a> <!-- test_NegativeSideC -->
-                  <span class="method-name">test_NegativeSideC</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [a+c&lt;=b] but found [c&lt;=0]
+                  <a name="test_getSquareNegManual">
+                  </a> <!-- test_getSquareNegManual -->
+                  <span class="method-name">test_getSquareNegManual</span>
+                  <div class="stack-trace">java.lang.AssertionError: calculates square of triangle with negative side
 	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:189)
-	at org.testng.Assert.assertEquals(Assert.java:199)
-	at triangle_test.Test_CheckTriangle.test_NegativeSideC(Test_CheckTriangle.java:72)
+	at triangle_test.Test_getSquareOfTriangle.test_getSquareNegManual(Test_getSquareOfTriangle.java:57)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -233,23 +269,14 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test_NegativeSides">
-                  </a> <!-- test_NegativeSides -->
-                  <span class="method-name">test_NegativeSides</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [a&lt;=0] but found [b&lt;=0]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:189)
-	at org.testng.Assert.assertEquals(Assert.java:199)
-	at triangle_test.Test_CheckTriangle.test_NegativeSides(Test_CheckTriangle.java:31)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+                  <a name="test_getSquareNegativeSide">
+                  </a> <!-- test_getSquareNegativeSide -->
+                  <span class="method-name">test_getSquareNegativeSide</span>
+                  <div class="stack-trace">org.testng.TestException: 
+Method Test_getSquareOfTriangle.test_getSquareNegativeSide()[pri:0, instance:triangle_test.Test_getSquareOfTriangle@1e66f1f5] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:89)
+	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1416)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:695)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
@@ -278,21 +305,21 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">triangle_test.Test_CheckTriangle</span>
+              <span class="class-name">triangle_test.Test_getSquareOfTriangle</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test_NegativeSideA">
-                  </a> <!-- test_NegativeSideA -->
-                  <span class="method-name">test_NegativeSideA</span>
+                  <a name="test_getSquare">
+                  </a> <!-- test_getSquare -->
+                  <span class="method-name">test_getSquare</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test_NegativeSideB">
-                  </a> <!-- test_NegativeSideB -->
-                  <span class="method-name">test_NegativeSideB</span>
+                  <a name="test_getSquareRectangTrianAnotherEquation">
+                  </a> <!-- test_getSquareRectangTrianAnotherEquation -->
+                  <span class="method-name">test_getSquareRectangTrianAnotherEquation</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -300,7 +327,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Тоха\AppData\Local\Temp\testng-eclipse-1251652672\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Тоха\AppData\Local\Temp\testng-eclipse--928489547\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -309,7 +336,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;triangle_test.Test_CheckTriangle&quot;/&gt;
+      &lt;class name=&quot;triangle_test.Test_getSquareOfTriangle&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -349,32 +376,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testC0')
-data.setCell(0, 2, 'triangle_test.Test_CheckTriangle')
-data.setCell(0, 3, 23);
+data.setCell(0, 1, 'test_SquareOverflow')
+data.setCell(0, 2, 'triangle_test.Test_getSquareOfTriangle')
+data.setCell(0, 3, 20);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'test_NegativeSideC')
-data.setCell(1, 2, 'triangle_test.Test_CheckTriangle')
-data.setCell(1, 3, 4);
+data.setCell(1, 1, 'test_getSquareRectangTrianAnotherEquation')
+data.setCell(1, 2, 'triangle_test.Test_getSquareOfTriangle')
+data.setCell(1, 3, 10);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'test_NegativeSideA')
-data.setCell(2, 2, 'triangle_test.Test_CheckTriangle')
-data.setCell(2, 3, 3);
+data.setCell(2, 1, 'test_getSquareNegativeSide')
+data.setCell(2, 2, 'triangle_test.Test_getSquareOfTriangle')
+data.setCell(2, 3, 10);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'test_NegativeSideB')
-data.setCell(3, 2, 'triangle_test.Test_CheckTriangle')
-data.setCell(3, 3, 2);
+data.setCell(3, 1, 'test_getSquare')
+data.setCell(3, 2, 'triangle_test.Test_getSquareOfTriangle')
+data.setCell(3, 3, 0);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'test_NegativeSides')
-data.setCell(4, 2, 'triangle_test.Test_CheckTriangle')
-data.setCell(4, 3, 2);
+data.setCell(4, 1, 'test_getSquareNegManual')
+data.setCell(4, 2, 'triangle_test.Test_getSquareOfTriangle')
+data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'test_getSquareCantExist')
+data.setCell(5, 2, 'triangle_test.Test_getSquareOfTriangle')
+data.setCell(5, 3, 0);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 34 ms</span>
+              <span class="suite-total-time">Total running time: 40 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -400,32 +431,38 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">triangle_test.Test_CheckTriangle</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">triangle_test.Test_getSquareOfTriangle</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">testC0</span>
+                <span class="method-name">test_SquareOverflow</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test_NegativeSideA</span>
-                <span class="method-start">32 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">test_NegativeSideB</span>
-                <span class="method-start">39 ms</span>
+                <span class="method-name">test_getSquare</span>
+                <span class="method-start">20 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">test_NegativeSideC</span>
-                <span class="method-start">44 ms</span>
+                <span class="method-name">test_getSquareCantExist</span>
+                <span class="method-start">30 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">test_NegativeSides</span>
-                <span class="method-start">52 ms</span>
+                <span class="method-name">test_getSquareNegManual</span>
+                <span class="method-start">40 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_getSquareNegativeSide</span>
+                <span class="method-start">40 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_getSquareRectangTrianAnotherEquation</span>
+                <span class="method-start">50 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

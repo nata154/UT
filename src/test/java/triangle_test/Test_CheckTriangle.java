@@ -72,4 +72,40 @@ public class Test_CheckTriangle {
 		assertEquals(txtNegC, triangle.getMessage());
 		System.out.println("There is a mistake in line 44 comparing c<0");
 		}
+	
+	@Test
+	public void test_SumAB() {
+		double a = 1;
+		double b = 2;
+		double c = 10;
+		String sumAB = "a+b<=c";
+		
+		Triangle triangle = new Triangle(a, b, c);
+		assertEquals(false, triangle.checkTriangle());
+		assertEquals(sumAB, triangle.getMessage());
+	}
+	
+	@Test
+	public void test_SumAC() {
+		double a = 1;
+		double b = 10;
+		double c = 2;
+		String sumAC = "a+c<=b";
+		
+		Triangle triangle = new Triangle(a, b, c);
+		assertEquals(false, triangle.checkTriangle());
+		assertEquals(sumAC, triangle.getMessage());
+	}
+	
+	@Test
+	public void test_SumBC() {
+		double a = 10;
+		double b = 1;
+		double c = 2;
+		String sumBC = "b+c<=a";
+		
+		Triangle triangle = new Triangle(a, b, c);
+		assertEquals(false, triangle.checkTriangle());
+		assertEquals(sumBC, triangle.getMessage());
+	}
 }

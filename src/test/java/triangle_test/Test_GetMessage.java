@@ -8,10 +8,10 @@ import triangle.Triangle;
 
 public class Test_GetMessage {
 	
-	String msg = "Message about triangle";
 	
 	@Test
 	public void test_getMessage() {
+		String msg = "";
 		Triangle triangle = new Triangle (2, 3, 4);
 		assertEquals(msg, triangle.getMessage());
 	}
