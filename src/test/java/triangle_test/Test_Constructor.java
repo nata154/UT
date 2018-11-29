@@ -1,8 +1,8 @@
 package triangle_test;
 
-import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.fail;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import triangle.Triangle;
@@ -18,16 +18,16 @@ public class Test_Constructor {
 		
 		//creating triangle with negative side
 		Triangle triangle = new Triangle (a, b, c);
-		assertEquals(-5.0, a);
-		fail("Constructor creates triangle with negative side");
+		Assert.assertEquals(a, -5.0);
+		Assert.fail("Constructor creates triangle with negative side, there aren't any setters and getters");
 		//no getters and setters
 	}
 		
 		//triangle doesn't exist
 		@Test
 		public void test_DoesTriangleExist() {
-			Triangle triangle = new Triangle(1, 2, 2);
-			assertEquals(false, triangle.checkTriangle());
+			Triangle triangle = new Triangle(1, 2, 5);
+			Assert.assertTrue(triangle.checkTriangle());
 		}
 }
 

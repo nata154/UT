@@ -1,8 +1,6 @@
 package triangle_test;
 
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.fail;
-
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import triangle.Triangle;
@@ -11,12 +9,12 @@ public class Test_CheckTriangle {
 
 	@Test
 	public void testC0(){
-		fail ("There is a mistake in line 44 comparing c<0");
+		Assert.fail ("There is a mistake in line 44 comparing c<0");
 	}
 	
-	//entering 3 negative sides
+	//input 3 negative sides
 	@Test
-	public void test_NegativeSides() {
+	public void test_AllNegativeSides() {
 		double a = -3;
 		double b = -4;
 		double c = -5;
@@ -25,12 +23,12 @@ public class Test_CheckTriangle {
 		String txtNegC = "c<=0";
 		
 		Triangle triangle = new Triangle(a, b, c);
-		assertEquals(false, triangle.checkTriangle());
-		assertEquals(txtNegA, triangle.getMessage());
-		assertEquals(false, triangle.checkTriangle());
-		assertEquals(txtNegB, triangle.getMessage());
-		assertEquals(false, triangle.checkTriangle());
-		assertEquals(txtNegC, triangle.getMessage());
+		Assert.assertEquals(triangle.checkTriangle(), false);
+		Assert.assertEquals(triangle.getMessage(), txtNegA);
+		Assert.assertEquals(triangle.checkTriangle(), false);
+		Assert.assertEquals(triangle.getMessage(), txtNegB);
+		Assert.assertEquals(triangle.checkTriangle(), false);
+		Assert.assertEquals(triangle.getMessage(), txtNegC);
 	}
 	
 	//entering 1 negative side A
@@ -42,8 +40,8 @@ public class Test_CheckTriangle {
 		String txtNegA = "a<=0";
 				
 		Triangle triangle = new Triangle(a, b, c);
-		assertEquals(false, triangle.checkTriangle());
-		assertEquals(txtNegA, triangle.getMessage());
+		Assert.assertEquals(triangle.checkTriangle(), false);
+		Assert.assertEquals(triangle.getMessage(), txtNegA);
 		}
 	
 	//entering 1 negative side B
@@ -55,8 +53,8 @@ public class Test_CheckTriangle {
 		String txtNegB = "b<=0";
 				
 		Triangle triangle = new Triangle(a, b, c);
-		assertEquals(false, triangle.checkTriangle());
-		assertEquals(txtNegB, triangle.getMessage());
+		Assert.assertEquals(triangle.checkTriangle(), false);
+		Assert.assertEquals(triangle.getMessage(), txtNegB);
 		}
 	
 	//entering 1 negative side C
@@ -68,8 +66,8 @@ public class Test_CheckTriangle {
 		String txtNegC = "c<=0";
 				
 		Triangle triangle = new Triangle(a, b, c);
-		assertEquals(false, triangle.checkTriangle());
-		assertEquals(txtNegC, triangle.getMessage());
+		Assert.assertEquals(triangle.checkTriangle(), false);
+		Assert.assertEquals(triangle.getMessage(), txtNegC);
 		System.out.println("There is a mistake in line 44 comparing c<0");
 		}
 	
@@ -81,8 +79,8 @@ public class Test_CheckTriangle {
 		String sumAB = "a+b<=c";
 		
 		Triangle triangle = new Triangle(a, b, c);
-		assertEquals(false, triangle.checkTriangle());
-		assertEquals(sumAB, triangle.getMessage());
+		Assert.assertEquals(triangle.checkTriangle(), false);
+		Assert.assertEquals(triangle.getMessage(), sumAB);
 	}
 	
 	@Test
@@ -93,8 +91,8 @@ public class Test_CheckTriangle {
 		String sumAC = "a+c<=b";
 		
 		Triangle triangle = new Triangle(a, b, c);
-		assertEquals(false, triangle.checkTriangle());
-		assertEquals(sumAC, triangle.getMessage());
+		Assert.assertEquals(triangle.checkTriangle(), false);
+		Assert.assertEquals(triangle.getMessage(), sumAC);
 	}
 	
 	@Test
@@ -105,7 +103,7 @@ public class Test_CheckTriangle {
 		String sumBC = "b+c<=a";
 		
 		Triangle triangle = new Triangle(a, b, c);
-		assertEquals(false, triangle.checkTriangle());
-		assertEquals(sumBC, triangle.getMessage());
+		Assert.assertEquals(triangle.checkTriangle(), false);
+		Assert.assertEquals(triangle.getMessage(), sumBC);
 	}
 }

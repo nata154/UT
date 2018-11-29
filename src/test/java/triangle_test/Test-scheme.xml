@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="false">
+
+	<test name="First test suite">
+		<classes>
+			<class name="triangle_test.Test_getSquareOfTriangle">
+				<methods>
+					<exclude name="test_getSquare"></exclude>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Second test suite">
+		<groups>
+			<run>
+				<include name="triangleExists"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="triangle_test.Test_getSquareOfTriangle">
+			</class>
+		</classes>
+	</test>
+	
+		<test name="Third test suite for dataProvider">
+		<classes>
+			<class name="triangle_test.Tst_TriangleDataProvider">
+				<methods>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>
