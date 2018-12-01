@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test name="First test suite(failed)">
+  <test name="Fourth test suite(failed)">
+    <groups>
+      <run>
+        <include name="rectangularTtriangle"/>
+      </run>
+    </groups>
     <classes>
-      <class name="triangle_test.Test_getSquareOfTriangle">
+      <class name="triangle_test.Test_DetectTriangle">
         <methods>
-          <include name="test_getSquareNegManual"/>
-          <include name="test_getSquareNegativeSide"/>
-          <include name="test_getSquareTrCantExist"/>
-          <include name="test_SquareOverflow"/>
+          <include name="test_isTriangleRectangularACB"/>
         </methods>
-      </class> <!-- triangle_test.Test_getSquareOfTriangle -->
+      </class> <!-- triangle_test.Test_DetectTriangle -->
     </classes>
-  </test> <!-- First test suite(failed) -->
+  </test> <!-- Fourth test suite(failed) -->
 </suite> <!-- Failed suite [Suite] -->

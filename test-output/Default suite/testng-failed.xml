@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="triangle_test.Test_getSquareOfTriangle">
+      <class name="triangle_test.Test_DetectTriangle">
         <methods>
-          <include name="test_getSquareCantExist"/>
-          <include name="test_getSquareNegManual"/>
-          <include name="test_getSquareNegativeSide"/>
-          <include name="test_SquareOverflow"/>
+          <include name="test_isTriangleEquilateralReturnedValueTrue"/>
+          <include name="test_isTriangleRectangularACB"/>
+          <include name="test_isTriangleEquilateralReturnedValueEquals"/>
         </methods>
-      </class> <!-- triangle_test.Test_getSquareOfTriangle -->
+      </class> <!-- triangle_test.Test_DetectTriangle -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

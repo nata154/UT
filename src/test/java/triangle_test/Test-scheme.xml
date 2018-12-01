@@ -23,8 +23,8 @@
 			</class>
 		</classes>
 	</test>
-	
-		<test name="Third test suite for dataProvider">
+
+	<test name="Third test suite for dataProvider">
 		<classes>
 			<class name="triangle_test.Tst_TriangleDataProvider">
 				<methods>
@@ -33,4 +33,18 @@
 		</classes>
 	</test>
 
+	<test name="Fourth test suite">
+		<groups>
+			<run>
+				<include name="rectangularTriangle"></include>
+				<include name="equilateralTriangle"></include>
+				<include name="isoscelesTriangle"></include>
+				<include name="isoscelesOrdinary"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="triangle_test.Test_DetectTriangle">
+			</class>
+		</classes>
+	</test>
 </suite>
