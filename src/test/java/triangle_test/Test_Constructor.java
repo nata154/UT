@@ -1,7 +1,5 @@
 package triangle_test;
 
-import static org.testng.Assert.fail;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -9,12 +7,11 @@ import triangle.Triangle;
 
 public class Test_Constructor {
 	
-	double a = -5.0;
-	double b = 4.0;
-	double c = 5.0;
-	
 	@Test
 	public void testConstructor_for_parameters() {
+		double a = -5.0;
+		double b = 4.0;
+		double c = 5.0;
 		
 		//creating triangle with negative side
 		Triangle triangle = new Triangle (a, b, c);

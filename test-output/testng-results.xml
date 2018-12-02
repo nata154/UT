@@ -1,42 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="5" failed="3" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-12-01T08:49:14Z" name="Default suite" finished-at="2018-12-01T08:49:14Z" duration-ms="115">
+  <suite started-at="2018-12-02T14:12:58Z" name="Default suite" finished-at="2018-12-02T14:12:58Z" duration-ms="64">
     <groups>
-      <group name="equilateralTriangle">
-        <method signature="Test_DetectTriangle.test_isTriangleEquilateralReturnedValueEquals()[pri:0, instance:triangle_test.Test_DetectTriangle@71e9ddb4]" name="test_isTriangleEquilateralReturnedValueEquals" class="triangle_test.Test_DetectTriangle"/>
-        <method signature="Test_DetectTriangle.test_isTriangleEquilateralReturnedValueTrue()[pri:0, instance:triangle_test.Test_DetectTriangle@71e9ddb4]" name="test_isTriangleEquilateralReturnedValueTrue" class="triangle_test.Test_DetectTriangle"/>
-      </group> <!-- equilateralTriangle -->
-      <group name="ordinaryTriangle">
-        <method signature="Test_DetectTriangle.test_isTriangleOrdinary()[pri:0, instance:triangle_test.Test_DetectTriangle@71e9ddb4]" name="test_isTriangleOrdinary" class="triangle_test.Test_DetectTriangle"/>
-      </group> <!-- ordinaryTriangle -->
-      <group name="isoscelesTriangle">
-        <method signature="Test_DetectTriangle.test_isTriangleIsoscelesTrueAll()[pri:0, instance:triangle_test.Test_DetectTriangle@71e9ddb4]" name="test_isTriangleIsoscelesTrueAll" class="triangle_test.Test_DetectTriangle"/>
-      </group> <!-- isoscelesTriangle -->
-      <group name="rectangularTriangle">
-        <method signature="Test_DetectTriangle.test_isTriangleRectangularABC()[pri:0, instance:triangle_test.Test_DetectTriangle@71e9ddb4]" name="test_isTriangleRectangularABC" class="triangle_test.Test_DetectTriangle"/>
-        <method signature="Test_DetectTriangle.test_isTriangleRectangularACB()[pri:0, instance:triangle_test.Test_DetectTriangle@71e9ddb4]" name="test_isTriangleRectangularACB" class="triangle_test.Test_DetectTriangle"/>
-        <method signature="Test_DetectTriangle.test_isTriangleRectangularAll()[pri:0, instance:triangle_test.Test_DetectTriangle@71e9ddb4]" name="test_isTriangleRectangularAll" class="triangle_test.Test_DetectTriangle"/>
-        <method signature="Test_DetectTriangle.test_isTriangleRectangularBCA()[pri:0, instance:triangle_test.Test_DetectTriangle@71e9ddb4]" name="test_isTriangleRectangularBCA" class="triangle_test.Test_DetectTriangle"/>
-      </group> <!-- rectangularTriangle -->
     </groups>
-    <test started-at="2018-12-01T08:49:14Z" name="Default test" finished-at="2018-12-01T08:49:14Z" duration-ms="115">
-      <class name="triangle_test.Test_DetectTriangle">
-        <test-method signature="test_isTriangleEquilateralReturnedValueEquals()[pri:0, instance:triangle_test.Test_DetectTriangle@71e9ddb4]" started-at="2018-12-01T11:49:14Z" name="test_isTriangleEquilateralReturnedValueEquals" finished-at="2018-12-01T11:49:14Z" duration-ms="20" status="FAIL">
+    <test started-at="2018-12-02T14:12:58Z" name="Default test" finished-at="2018-12-02T14:12:58Z" duration-ms="64">
+      <class name="triangle_test.Test_GetMessage">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:triangle_test.Test_GetMessage@5b94b04d]" started-at="2018-12-02T17:12:58Z" name="beforeMethod" finished-at="2018-12-02T17:12:58Z" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="test_setMessage()[pri:0, instance:triangle_test.Test_GetMessage@5b94b04d]" started-at="2018-12-02T17:12:58Z" name="test_setMessage" finished-at="2018-12-02T17:12:58Z" duration-ms="0" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [1] but found [3]]]>
+              <![CDATA[There is no setMessage method. We can configure message only in checkTriangle method. What does the customer say?]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [1] but found [3]
+              <![CDATA[java.lang.AssertionError: There is no setMessage method. We can configure message only in checkTriangle method. What does the customer say?
 	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:388)
-	at org.testng.Assert.assertEquals(Assert.java:398)
-	at triangle_test.Test_DetectTriangle.test_isTriangleEquilateralReturnedValueEquals(Test_DetectTriangle.java:67)
+	at triangle_test.Test_GetMessage.test_setMessage(Test_GetMessage.java:36)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -67,114 +50,24 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_isTriangleEquilateralReturnedValueEquals -->
-        <test-method signature="test_isTriangleEquilateralReturnedValueTrue()[pri:0, instance:triangle_test.Test_DetectTriangle@71e9ddb4]" started-at="2018-12-01T11:49:14Z" name="test_isTriangleEquilateralReturnedValueTrue" finished-at="2018-12-01T11:49:14Z" duration-ms="2" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertTrue(Assert.java:41)
-	at org.testng.Assert.assertTrue(Assert.java:51)
-	at triangle_test.Test_DetectTriangle.test_isTriangleEquilateralReturnedValueTrue(Test_DetectTriangle.java:81)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- test_setMessage -->
+        <test-method signature="test_getMessage()[pri:0, instance:triangle_test.Test_GetMessage@5b94b04d]" started-at="2018-12-02T17:12:58Z" name="test_getMessage" finished-at="2018-12-02T17:12:58Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_isTriangleEquilateralReturnedValueTrue -->
-        <test-method signature="test_isTriangleIsoscelesTrueAll()[pri:0, instance:triangle_test.Test_DetectTriangle@71e9ddb4]" started-at="2018-12-01T11:49:14Z" name="test_isTriangleIsoscelesTrueAll" finished-at="2018-12-01T11:49:14Z" duration-ms="2" status="PASS">
+        </test-method> <!-- test_getMessage -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:triangle_test.Test_GetMessage@5b94b04d]" started-at="2018-12-02T17:12:58Z" name="afterMethod" finished-at="2018-12-02T17:12:58Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_isTriangleIsoscelesTrueAll -->
-        <test-method signature="test_isTriangleOrdinary()[pri:0, instance:triangle_test.Test_DetectTriangle@71e9ddb4]" started-at="2018-12-01T11:49:14Z" name="test_isTriangleOrdinary" finished-at="2018-12-01T11:49:14Z" duration-ms="3" status="PASS">
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:triangle_test.Test_GetMessage@5b94b04d]" started-at="2018-12-02T17:12:58Z" name="beforeMethod" finished-at="2018-12-02T17:12:58Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_isTriangleOrdinary -->
-        <test-method signature="test_isTriangleRectangularABC()[pri:0, instance:triangle_test.Test_DetectTriangle@71e9ddb4]" started-at="2018-12-01T11:49:14Z" name="test_isTriangleRectangularABC" finished-at="2018-12-01T11:49:14Z" duration-ms="2" status="PASS">
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:triangle_test.Test_GetMessage@5b94b04d]" started-at="2018-12-02T17:12:58Z" name="afterMethod" finished-at="2018-12-02T17:12:58Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_isTriangleRectangularABC -->
-        <test-method signature="test_isTriangleRectangularACB()[pri:0, instance:triangle_test.Test_DetectTriangle@71e9ddb4]" started-at="2018-12-01T11:49:14Z" name="test_isTriangleRectangularACB" finished-at="2018-12-01T11:49:14Z" duration-ms="2" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertTrue(Assert.java:41)
-	at org.testng.Assert.assertTrue(Assert.java:51)
-	at triangle_test.Test_DetectTriangle.test_isTriangleRectangularACB(Test_DetectTriangle.java:56)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_isTriangleRectangularACB -->
-        <test-method signature="test_isTriangleRectangularAll()[pri:0, instance:triangle_test.Test_DetectTriangle@71e9ddb4]" started-at="2018-12-01T11:49:14Z" name="test_isTriangleRectangularAll" finished-at="2018-12-01T11:49:14Z" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_isTriangleRectangularAll -->
-        <test-method signature="test_isTriangleRectangularBCA()[pri:0, instance:triangle_test.Test_DetectTriangle@71e9ddb4]" started-at="2018-12-01T11:49:14Z" name="test_isTriangleRectangularBCA" finished-at="2018-12-01T11:49:14Z" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_isTriangleRectangularBCA -->
-      </class> <!-- triangle_test.Test_DetectTriangle -->
+        </test-method> <!-- afterMethod -->
+      </class> <!-- triangle_test.Test_GetMessage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

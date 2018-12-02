@@ -27,7 +27,7 @@ public class Tst_TriangleDataProvider { //to try writing dataProvider
 		Double side_b = (Double) parameters.get(1);
 		Double side_c = (Double) parameters.get(2);
 		
-		double p = (side_a+side_b+side_c)/2;
+		double p = (side_a + side_b + side_c)/2;
 		double expSquare = Math.sqrt(p*(p-side_a)*(p-side_b)*(p-side_c));
 		
 		Triangle triangle = new Triangle(side_a, side_b, side_c);

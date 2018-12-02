@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="triangle_test.Test_DetectTriangle">
+      <class name="triangle_test.Test_GetMessage">
         <methods>
-          <include name="test_isTriangleEquilateralReturnedValueTrue"/>
-          <include name="test_isTriangleRectangularACB"/>
-          <include name="test_isTriangleEquilateralReturnedValueEquals"/>
+          <include name="beforeMethod"/>
+          <include name="test_setMessage"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- triangle_test.Test_DetectTriangle -->
+      </class> <!-- triangle_test.Test_GetMessage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
